@@ -73,7 +73,7 @@ const App = () => {
 
   const [code, setCode] = useState("");
 
-  const ai = new GoogleGenAI({ apiKey: "AIzaSyB663wPimQcoT_fg2Tdt18NH64_SeRw-lI" }); // replace "YOUR_API_KEY" with you api key
+  const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_KEY }); // replace "YOUR_API_KEY" with you api key
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState("");
 
